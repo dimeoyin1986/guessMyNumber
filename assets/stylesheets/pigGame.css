@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(173, 16, 68);
+}
+
+
+
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid white;
+
+}
+
+.subgame {
+    height: 70vh;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.active {
+    background-color: pink;
+}
+
+.player-0-panel.active {
+    background-color: pink;
+}
+
+.player-0-panel {
+
+    background-color: rgb(131, 93, 100);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.player-1-panel.active {
+    background-color: pink;
+}
+
+.player-1-panel {
+    background-color: rgb(131, 93, 100);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.player-current-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 20%;
+    background-color: navy;
+    color: gold;
+    width: 50%;
+    height: 30%;
+    border-radius: 20px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.combined-button {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 65%;
+    left: 46%;
+
+
+
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.fa {
+    margin-right: 10px;
+}
+
+.new {
+    position: absolute;
+    left: 46%;
+    top: 20%;
+
+}
+
+.player-name {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.player-score {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 46%;
+    top: 38%;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.winner {
+    background-color: darkgreen;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(17, 17, 17, 0.5),
+        1px 1px 2px rgba(17, 17, 17, 0.5),
+        1px 1px 3px rgba(17, 17, 17, 0.5),
+        1px 1px 4px rgba(17, 17, 17, 0.5),
+        1px 1px 5px rgba(17, 17, 17, 0.5),
+        1px 1px 6px rgba(17, 17, 17, 0.5),
+        1px 1px 7px rgba(17, 17, 17, 0.5),
+        1px 1px 8px rgba(17, 17, 17, 0.5),
+        1px 1px 9px rgba(17, 17, 17, 0.5),
+        1px 1px 10px rgba(17, 17, 17, 0.5);
+
+}

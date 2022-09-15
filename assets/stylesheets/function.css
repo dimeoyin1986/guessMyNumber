@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.function {
+    width: 100vw;
+    height: 100vh;
+    background-color: navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.poll-answer {
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    padding: 20px 50px;
+    background-color: cadetblue;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}

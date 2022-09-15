@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkred;
+}
+
+.accordion {
+    background-color: azure;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 100px auto;
+    width: 700px;
+}
+
+.accordion-items {
+    margin: 24px;
+    padding: 24px;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 150px 1fr auto;
+    grid-template-areas: "";
+}
+
+.number,
+.text {
+    font-size: 24px;
+    font-weight: 500;
+    color: green;
+}
+
+.text {}
+
+.hidden-box p {
+    line-height: 1.6;
+    margin-bottom: 24px;
+
+}
+
+
+.hidden-box ul {
+    color: rgb(173, 181, 189);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.icon {
+    color: green;
+}

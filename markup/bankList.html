@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank project</title>
+    <link rel="stylesheet" href="../assets/stylesheets/bankList.css">
+    <link rel="stylesheet" href="../assets/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="grand-container">
+        <nav>
+            <div class="nav-left">
+                <p class="welcome">BizmiLlaah you can login</p>
+                <a href="index.html" class="first"><i class="fa fa-ioxhost"></i></a>
+            </div>
+            <div class="nav-right">
+                <form action="" class="login">
+                    <input type="text" placeholder="USER" class="login-input login-input-user">
+                    <input type="text" placeholder="PIN" maxlength="4" class="login-input login-input-pin">
+                    <button class="login-btn">&rarr;</button>
+                </form>
+
+
+            </div>
+
+        </nav>
+        <main class="app">
+            <section class="balance">
+                <div class="balance-main">
+                    <p class="balance-label">current balance</p>
+                    <p class="balance-date"><span class="date">04/26/2022</span> </p>
+                </div>
+                <p class="balance-value">$0000</p>
+
+            </section>
+            <div class="contain">
+                <div class="movements">
+                    <div class="movement-row">
+                        <div class="movements-type movement-type-deposit">2 deposit</div>
+                        <div class="movements-date">2 day ago</div>
+                        <div class="movement-value">$4000</div>
+                    </div>
+                    <div class="movement-row">
+                        <div class="movements-type movement-type-withdraw">1 withdraw</div>
+                        <div class="movements-date">24/04/2022</div>
+                        <div class="movement-value">$-378</div>
+                    </div>
+
+                </div>
+                <div class="real">
+                    <!-- OPERATION: TRANSFERS -->
+                    <section class="operation operation-transfer">
+                        <h2>Transfer money</h2>
+                        <form class="form form--transfer">
+                            <div class="mytransfer a">
+                                <input type="text" class="form-input form-input-to" />
+                                <label class="form-label">Transfer to</label>
+                            </div>
+                            <div class="mytransfer b">
+                                <input type="number" class="form-input form-input-amount" />
+                                <label class="form-label">Amount</label>
+                            </div>
+
+                            <button class="form-btn form-btn-transfer">&rarr;</button>
+
+
+                        </form>
+                    </section>
+                    <!-- OPERATION: LOAN -->
+                    <section class="operation operation-loan">
+                        <h2>Request loan</h2>
+                        <form class="form form--loan">
+                            <div class="myLoan">
+                                <input type="number" class="form__input form-input-loan-amount" />
+                                <label class="form__label form__label--loan">Amount</label>
+                            </div>
+
+                            <button class="form-btn form-btn-loan">&rarr;</button>
+
+                        </form>
+                    </section>
+                    <!-- OPERATION: CLOSE -->
+                    <section class="operation operation-close">
+                        <h2>Close account</h2>
+                        <form class="form form-close">
+                            <div class="myUser">
+                                <input type="text" class="form-input form-input-user" />
+                                <label class="form-label">Confirm user</label>
+                            </div>
+                            <div class="myPassword">
+                                <input type="password" maxlength="6" class="form-input form-input-pin" />
+                                <label class="form-label">Confirm PIN</label>
+                            </div>
+
+                            <button class="form-btn form-btn-close">&rarr;</button>
+
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+            <div class="last">
+                <!-- SUMMARY -->
+                <div class="summary">
+                    <div class="r income">
+                        <p class="summary-label">In</p>
+                        <p class="summary-value summary-value-in">0000€</p>
+                    </div>
+
+                    <div class="r expenditure">
+                        <p class="summary-label">Out</p>
+                        <p class="summary-value summary-value-out">0000€</p>
+                    </div>
+                    <div class="r interest">
+                        <p class="summary-label">Interest</p>
+                        <p class="summary-value summary-value-interest">0000€</p>
+                    </div>
+
+                    <button class="btn-sort">&downarrow; SORT</button>
+                </div>
+
+
+
+
+                <!-- LOGOUT TIMER -->
+                <p class="logout-timer">
+                    You will be logged out in <span class="timer">05:00</span>
+                </p>
+            </div>
+
+
+
+
+        </main>
+    </div>
+
+
+    <script src="../gridJavascript/bankList.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {}
+
+.mycontainer {
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+
+}
+
+
+.real a {
+    text-transform: uppercase;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+    text-shadow: 1px 1px 1px rgba(24, 24, 12, 0.5),
+        1px 1px 2px rgba(127, 127, 127, 0.5),
+        1px 1px 3px rgba(127, 127, 127, 0.5),
+        1px 1px 4px rgba(127, 127, 127, 0.5),
+        1px 1px 5px rgba(127, 127, 127, 0.5),
+        1px 1px 6px rgba(127, 127, 127, 0.5),
+        1px 1px 7px rgba(127, 127, 127, 0.5),
+        1px 1px 8px rgba(127, 127, 127, 0.5),
+        1px 1px 9px rgba(127, 127, 127, 0.5),
+        1px 1px 10px rgba(127, 127, 127, 0.5);
+    ;
+    color: white;
+    text-decoration: none;
+
+}
+
+.real a:hover {
+    background-color: navy;
+    color: gold;
+}
+
+
+
+.container {
+    position: relative;
+    border: 2px solid black;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    grid-template-rows: 70px 250px 70px;
+    grid-template-areas: "header1 header1 header1"
+        "main main main"
+        "btn btn btn";
+}
+
+.header1 {
+    background-color: gainsboro;
+    grid-area: header1;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.header1::after {
+    content: "SALE";
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+
+}
+
+.desc {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.desc1 {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.desc2 {
+    height: 50%;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+.myBox {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    height: 20px;
+    width: 20px;
+}
+
+.black {
+    background-color: black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: rgb(248, 248, 94);
+}
+
+.green {
+    background-color: greenyellow;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+
+}
+
+.detailing {
+    width: 29%;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+.btn {
+    grid-area: btn;
+    background: black;
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.detail {
+    text-transform: capitalize;
+}
